@@ -54,16 +54,16 @@ angular.controller('myController', function($scope) {
 
 Now that you know what directives are, Angular has some that are built in. Here are some common ones that you'll most likely come across.
 
-### ng-click, ng-focus, ng-mouseover
+* ng-click, ng-focus, ng-mouseover
 
-These are self-explanitory. As a user clicks, focuses, or mousesover, perform the necessary directive function.
+    These are self-explanitory. As a user clicks, focuses, or mousesover, perform the necessary directive function.
+    
+    **HTML**
+    ```
+    <div ng-mouseover="console.log('mouseover')"></div>
+    ```
 
-**HTML**
-```
-<div ng-mouseover="console.log('mouseover')"></div>
-```
-
-### ng-hide, ng-show, ng-if
+* ng-hide, ng-show, ng-if
 
 These directives can help you show or hide elements based on the boolean value specified inside the directive.
 
