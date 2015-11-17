@@ -42,6 +42,7 @@ Lets take this one step further, lets say we want to call a function that we exp
 ```
 
 **JS**
+```
 angular.controller('myController', function($scope) {
   $scope.myClickHandler = function() {
     alert('myClickHandler')
