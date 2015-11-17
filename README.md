@@ -32,6 +32,27 @@ But in Angular, the same functionality can be written like so:
 <div ng-click="alert('clicked')">Button</div>
 ```
 
-So that's cool, but you're probably asking yourself what the advantage is.
+The advantage of using directives is that your events are now closly wound into your HTML, making it easier to read and figure out what the element does even in your Chrome inspector. Development and debugging is now a tad bit easier.
 
-* 
+Lets take this one step further, lets say we want to call a function that we explicitly defined. Well, its as easy as just calling it as long it is on the `$scope`.
+
+**HTML**
+```
+<div ng-click="myClickHandler()"></div>
+```
+
+**JS**
+angular.controller('myController', function($scope) {
+  $scope.myClickHandler = function() {
+    alert('myClickHandler')
+  }
+})
+```
+
+## Some common directives
+
+Now that you know what directives are, Angular has some that are built in. Here are some common ones that you'll most likely come across.
+
+### ng-click, ng-focus, ng-mouseover
+
+These are q
