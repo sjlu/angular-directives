@@ -54,7 +54,7 @@ angular.controller('myController', function($scope) {
 
 Now that you know what directives are, Angular has some that are built in. Here are some common ones that you'll most likely come across.
 
-* ng-click, ng-focus, ng-mouseover
+* `ng-click` `ng-focus` `ng-mouseover`
 
     These are self-explanitory. As a user clicks, focuses, or mousesover, perform the necessary directive function.
     
@@ -63,7 +63,7 @@ Now that you know what directives are, Angular has some that are built in. Here 
     <div ng-mouseover="console.log('mouseover')"></div>
     ```
 
-* ng-hide, ng-show, ng-if
+* `ng-hide` `ng-show` `ng-if`
 
     These directives can help you show or hide elements based on the boolean value specified inside the directive.
     
@@ -72,6 +72,18 @@ Now that you know what directives are, Angular has some that are built in. Here 
     <div ng-show="myBooleanVariable"></div>
     ```
 
-* ng-repeat
+* `ng-repeat`
 
     You can use the repeat directive to iterate through your arrays and create multiple elements.
+    
+    Normally you would create multiple elements like this:
+    ```
+    <div class="card">{{ cards[0].name }}</div>
+    <div class="card">{{ cards[1].name }}</div>
+    <div class="card">{{ cards[2].name }}</div>
+    ```
+    
+    With `ng-repeat`, it's as simple as this:
+    ```
+    <div ng-repeat="card in cards" class="card">{{ card.name }}</div>
+    ```
