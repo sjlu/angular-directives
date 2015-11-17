@@ -72,6 +72,6 @@ Now that you know what directives are, Angular has some that are built in. Here 
     <div ng-show="myBooleanVariable"></div>
     ```
 
-### ng-repeat
+* ng-repeat
 
     You can use the repeat directive to iterate through your arrays and create multiple elements.
