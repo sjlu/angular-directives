@@ -65,13 +65,13 @@ Now that you know what directives are, Angular has some that are built in. Here 
 
 * ng-hide, ng-show, ng-if
 
-These directives can help you show or hide elements based on the boolean value specified inside the directive.
-
-**HTML**
-```
-<div ng-show="myBooleanVariable"></div>
-```
+    These directives can help you show or hide elements based on the boolean value specified inside the directive.
+    
+    **HTML**
+    ```
+    <div ng-show="myBooleanVariable"></div>
+    ```
 
 ### ng-repeat
 
-
+    You can use the repeat directive to iterate through your arrays and create multiple elements.
