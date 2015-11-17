@@ -87,3 +87,5 @@ Now that you know what directives are, Angular has some that are built in. Here 
     ```
     <div ng-repeat="card in cards" class="card">{{ card.name }}</div>
     ```
+    
+To find more of these built-in directives, you can find it in Angular's documentation in [directive components in ng](https://docs.angularjs.org/api/ng/directive).
